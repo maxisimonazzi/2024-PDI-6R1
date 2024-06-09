@@ -1,5 +1,6 @@
 clc
-clear 
+clear
+addpath("funciones")
 
 % Primer parcial Procesamiento Digital de Imágenes 2024
 % Tema 1

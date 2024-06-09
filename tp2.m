@@ -1,5 +1,5 @@
 clc
-clear 
+clear
 
 %{ 
 EJERCICIO 1:
@@ -22,16 +22,16 @@ mostradas.
 %}
 
 % E1 a
-imga = zeros (300, 600);
-whos imga
+img1a = zeros (300, 600);
+whos img1a
 
 % E1 b
-imgb = ones (200, 800);
-whos imgb
+img1b = ones (200, 800);
+whos img1b
 
 % E1 c
-imgc = eye (150, 150);
-[m n] = size(imgc)
+img1c = eye (150, 150);
+[m n] = size(img1c)
 
 % E1 d
 % El rango de valores que puede tener una variable del tipo double es desde
@@ -42,9 +42,9 @@ imgc = eye (150, 150);
 
 % E1 e
 figure(1);
-subplot(3,1,1);imshow(imga); title ("Imagen de 300 x 600 negra")
-subplot(3,1,2);imshow(imgb); title ("Imagen de 200 x 800 blanca")
-subplot(3,1,3);imshow(imgc); title ("Imagen de 150 x 150 con la diagonal blanca")
+subplot(3,1,1);imshow(img1a); title ("Imagen de 300 x 600 negra")
+subplot(3,1,2);imshow(img1b); title ("Imagen de 200 x 800 blanca")
+subplot(3,1,3);imshow(img1c); title ("Imagen de 150 x 150 con la diagonal blanca")
 
 %{
 EJERCICIO 2:
@@ -116,20 +116,19 @@ rojo=img4(:,:,1);
 verde=img4(:,:,2);
 azul=img4(:,:,3);
 
-% b
-subplot(3,2,1)
+subplot(3,3,1)
 imshow(rojo)
 title("Intensidad Rojo")
-subplot(3,2,3)
+subplot(3,3,2)
 imshow(verde)
 title("Intensidad Verde")
-subplot(3,2,5)
+subplot(3,3,3)
 imshow(azul)
 title("Intensidad Azul")
 
-% c
+% b
 % Visualizar el canal rojo en su color respectivo
-subplot(3,2,2);
+subplot(3,3,4);
 canal_r=img4; % cargo la imagen original en la variable canal_r
 canal_r(:,:,3)=0; % elimino el color azul de la imagen
 canal_r(:,:,2)=0; % elimino el color azul de la imagen
@@ -137,7 +136,7 @@ imshow(canal_r);
 title('Canal Rojo');
 
 % Visualizar el canal verde en su color respectivo
-subplot(3,2,4);
+subplot(3,3,5);
 canal_g=img4; % cargo la imagen original en la variable canal_g
 canal_g(:,:,3)=0;  % elimino el color azul de la imagen
 canal_g(:,:,1)=0; % elimino el color rojo de la imagen
@@ -145,12 +144,35 @@ imshow(canal_g);
 title('Canal Verde');
 
 % Visualizar el canal azul en su color respectivo
-subplot(3,2,6);
+subplot(3,3,6);
 canal_b=img4; % cargo la imagen original en la variable canal_b
 canal_b(:,:,1)=0; % elimino el color rojo de la imagen
 canal_b(:,:,2)=0; % elimino el color azul de la imagen
 imshow(canal_b);
 title('Canal Azul');
+
+% c
+% Anular canal azul
+azul_anulado=img4;
+azul_anulado(:,:,3)=0; %azul anulado
+subplot(3,3,9);
+imshow(azul_anulado);
+title('Canal Azul anulado');
+
+% Anular canal rojo
+rojo_anulado=img4;
+rojo_anulado(:,:,1)=0; %rojo anulado
+subplot(3,3,7);
+imshow(rojo_anulado);
+title('Canal Rojo anulado');
+
+% Anular canal verde
+verde_anulado=img4;
+verde_anulado(:,:,2)=0; %verde anulado
+subplot(3,3,8);
+imshow(verde_anulado);
+title('Canal Verde anulado');
+
 
 %{
 EJERCICIO 5:
@@ -162,6 +184,7 @@ b) Mostrar las 4 partes de una imagen en escala de gris separadas
 %}
 
 figure(5);
+subplot (4,2,[1 4])
 img5 = imread("manzanas.jpg");
 img5_gris=rgb2gray(img5);
 [X Y]=size(img5_gris)
@@ -170,6 +193,14 @@ img5_double(1:X/2,Y/2:Y)=0.5;
 img5_double(X/2:X,Y/2:Y)=1;
 img5_double(X/2:X,1:Y/2)=0.75;
 imshow(img5_double)
+
+% parto la imagen en cuadrantes
+cuadrante1=img5_gris(1:X/2,1:Y/2); subplot(4,2,5); imshow(cuadrante1); title("Primer cuadrante") % muestro primer cuadrante
+cuadrante2=img5_gris(1:X/2,Y/2:Y); subplot(4,2,6); imshow(cuadrante2); title("Segundo cuadrante") % muestro segundo cuadrante
+cuadrante3=img5_gris(X/2:X,1:Y/2); subplot(4,2,7); imshow(cuadrante3); title("Tercer cuadrante") % muestro tercer cuadrante
+cuadrante4=img5_gris(X/2:X,Y/2:Y); subplot(4,2,8); imshow(cuadrante4); title("Cuarto cuadrante") % muestro cuarto cuadrante
+
+
 
 
 %{
@@ -207,7 +238,7 @@ parte2a_gris_a_3d = cat(3, parte2a_gris, parte2a_gris, parte2a_gris);
 combinada = [parte1a, parte2a_gris_a_3d, parte3a];
 
 % Imagen combinada
-subplot(3,1,1)
+subplot(2,3,1)
 imshow(combinada);
 title('Imagen con una tercera parte en Escala de Grises');
 
@@ -233,7 +264,7 @@ parte3b_gris_a_3d = cat(3, parte3b_gris, parte3b_gris, parte3b_gris);
 combinada2 = [parte1b, parte2b, parte3b_gris_a_3d, parte4b, parte5b];
 
 % Imagen combinada
-subplot(3,1,2)
+subplot(2,3,2)
 imshow(combinada2);
 title('Imagen con una quinta parte en Escala de Grises');
 
@@ -261,9 +292,25 @@ parte4c_gris_a_3d = cat(3, parte4c_gris, parte4c_gris, parte4c_gris);
 combinada3 = [parte1c, parte2c, parte3c, parte4c_gris_a_3d, parte5c, parte6c, parte7c];
 
 % Imagen combinada
-subplot(3,1,3)
+subplot(2,3,3)
 imshow(combinada3);
 title('Imagen con una septima parte en Escala de Grises');
+
+
+% ------------------------------------------------------
+% Alternativa de interpretacion, reducir la resolucion de las fotos en una
+% proporcion de 3, 5 y 6
+% ------------------------------------------------------
+
+
+img6a = imread('manzanas.jpg');
+img_gris = rgb2gray(img6a);
+tercera = img_gris(1:3:end,1:3:end);
+quinta= img_gris(1:5:end,1:5:end);
+septima = img_gris(1:7:end,1:7:end);
+subplot(2,3,4);imshow(tercera);title("Un tercio de pixeles")
+subplot(2,3,5);imshow(quinta);title("Un quinta de pixeles")
+subplot(2,3,6);imshow(septima);title("Un septimo de pixeles")
 
 %{
 EJERCICIO 7:
