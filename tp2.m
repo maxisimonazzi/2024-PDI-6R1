@@ -52,6 +52,7 @@ EJERCICIO 2:
 
 Crear una imagen de 400x400 y subdividir en 4 áreas como se ve en el
 gráfico. Cada área debe tener la intensidad especificada.
+
 %}
 
 figure(2);
@@ -69,6 +70,7 @@ a) Leer una imagen ,convertir a gris ,indagar dimensiones y tipo no poner
 punto y coma y ver que muestra la pantalla observar los valores
 b) Si la imagen es uint8 convertir a doublé del intervalo[0 1] y ver que
 muestra la pantalla los valores de los pixeles
+
 %}
 
 % a
@@ -107,6 +109,7 @@ respectivo color
 c) Anular un campo y visualizar el resultado de los otro dos, también
 visualizar el campo anulado y buscar en internet mezcla de colores en
 pantallas.
+
 %}
 
 figure(4);
@@ -181,6 +184,7 @@ EJERCICIO 5:
 a) A una imagen en escala de gris double0.5 dividirla en 4 partes iguales y
 realizar los siguientes cambios :
 b) Mostrar las 4 partes de una imagen en escala de gris separadas
+
 %}
 
 figure(5);
@@ -211,6 +215,7 @@ Visualizar las siguientes imágenes:
 a) Tenga la tercera parte de los pixeles de la imagen en escala de gris.
 b) Tenga la quinta parte de los pixeles de la imagen en escala de gris.
 c) Tenga la séptima parte de los pixeles de la imagen en escala de gris.
+
 %}
 
 figure(6);
@@ -269,7 +274,7 @@ imshow(combinada2);
 title('Imagen con una quinta parte en Escala de Grises');
 
 % c
-% Dividir la imagen en 5 partes verticales
+% Dividir la imagen en 7 partes verticales
 septimos = round(columnas / 7);
 
 % Extraer las tres partes de la imagen
@@ -296,12 +301,10 @@ subplot(2,3,3)
 imshow(combinada3);
 title('Imagen con una septima parte en Escala de Grises');
 
-
 % ------------------------------------------------------
 % Alternativa de interpretacion, reducir la resolucion de las fotos en una
-% proporcion de 3, 5 y 6
+% proporcion de 3, 5 y 7
 % ------------------------------------------------------
-
 
 img6a = imread('manzanas.jpg');
 img_gris = rgb2gray(img6a);
@@ -318,6 +321,7 @@ EJERCICIO 7:
 
 Usando subplot visualizar imagen original; imagen escala de intensidad y
 su transpuesta.
+
 %}
 
 figure(7);

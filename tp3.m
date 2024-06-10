@@ -105,8 +105,6 @@ usar una fotografía.
 
 %}
 
-img5 = imread("manzanas.jpg");
-img5_gris = rgb2gray(img5);
 
 %{ 
 EJERCICIO 6:
@@ -226,7 +224,7 @@ title("Histograma acumulativo")
 
 
 %{ 
-EJERCICIO 8:
+EJERCICIO 12:
 ------------
 
 Implementar los bloques de simulink para:
