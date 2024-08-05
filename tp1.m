@@ -7,7 +7,6 @@ EJERCICIO 1:
 
 a) Cree un vector fila que contenga los elementos: 32, 4, 81, e^2.5,
 cos(π/3) y 14,2
-
 b) Cree un vector columna que contenga los elementos: 1, 6, 8, 11, 9
 
 %}
@@ -115,13 +114,10 @@ C = 3  6  9 12 15
 
 a) Crear un vector columna de tres elementos, llamado Ua, que contenga los
 elementos de la tercera columna de C.
-
 b) Crear un vector columna de cinco elementos, llamado Ub, que contenga los
 elementos de la segunda fila de C.
-
 c) Crear un vector columna de nueve elementos, llamado Uc, que contenga los
 elementos de la primera, tercera y quinta columna de C.
-
 d) Crear un vector columna de diez elementos llamado Ud, que contenga los
 elementos de la primera y segunda fila de C.
 
@@ -153,7 +149,6 @@ A  =   2  4  6  8 10 12 14
 
 a) cree una matriz B de 3 x 4 a partir de la primera, tercera y cuarta
 fila, y de la primera, tercera, quinta, y séptima columna de la matriz A.
-
 b) cree un vector fila de 15 elementos llamado u, a partir de los elementos
 de la tercera fila y de la quinta a la séptima columna de la matriz A.
 

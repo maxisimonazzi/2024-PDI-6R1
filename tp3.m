@@ -7,7 +7,6 @@ EJERCICIO 1:
 ------------
 
 a) Calcular y desplegar el Histograma normal de una imagen.
-
 b) Usando los comandos subplot visualizar imagen original, imagen en escala
 de gris y su respectivo Histograma normal.
 
@@ -37,7 +36,6 @@ EJERCICIO 2:
 ------------
 
 a) Hacer el programa para visualizar el Histograma Acumulativo.
-
 b) Usando los comandos subplot visualizar imagen original, imagen en escala
 de gris y su respectivo Histograma normal y acumulativo
 

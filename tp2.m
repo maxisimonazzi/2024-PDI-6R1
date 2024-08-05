@@ -7,15 +7,11 @@ EJERCICIO 1:
 
 a) Crear una imagen de 300 filas y 600 columnas todo negro; indagar sobre
 sus dimensiones y tipo.
-
 b) Crear una imagen de 200 filas y 800 columnas toda blanca ,indagar sobre
 sus dimensiones y tipo.
-
 c) Crear una imagen de 150x150 y la diagonal con valor 1 indagar sobre sus
 dimensiones.
-
 d) Cuál es el rango de valores de una imagen tipo doublé y un tipo uint8.
-
 e) Mediante comando subplot visualizar y agregar nombres a las imágenes
 mostradas.
 
