@@ -17,7 +17,6 @@ vectorFila1 = [32 4 81 exp(2.5) cos(pi/3) 14.2]
 % E1 b
 vectorColumna1 = [1; 6; 8; 11; 9]
 
-
 %{ 
 EJERCICIO 2:
 ------------
@@ -32,7 +31,6 @@ vectorColumna2a = [32; 4; 81; exp(2.5); cos(pi/3); 14.2]
 % E2 alternativa b
 vectorColumna2b = vectorFila1'
 
-
 %{ 
 EJERCICIO 3:
 ------------
@@ -44,7 +42,6 @@ sen(2,5π).
 
 vectorColumna3 = [55; 14; log(51); 987; 0; sin(2.5*pi)]
 
-
 %{ 
 EJERCICIO 4:
 ------------
@@ -55,7 +52,6 @@ elemento 33 con una distancia de 2 entre los elementos (1,3,5,………,33).
 %}
 
 vectorFila4 = [1:2:33]
-
 
 %{ 
 EJERCICIO 5:
@@ -69,7 +65,6 @@ num  =  1  2  3  4  5  6  7  8  9  10
 
 num = [1:10]
 
-
 %{ 
 EJERCICIO 6:
 ------------
@@ -81,7 +76,6 @@ se puede crear a partir de la transposición de un vector fila
 %}
 
 vectorColumna6 = [15:-5:-25]'
-
 
 %{ 
 EJERCICIO 7:
@@ -100,7 +94,6 @@ matriz7a = [2 4 6 8 10; 3 6 9 12 15; 7 14 21 28 35]
 
 %E7 alternativa b
 matriz7b = [2:2:10; 3:3:15; 7:7:35]
-
 
 %{ 
 EJERCICIO 8:
@@ -135,7 +128,6 @@ vectorColumnaUc = [matriz7b(: , 1); matriz7b(: , 3); matriz7b(: , 5)]
 %E8 d
 vectorColumnaUd = [matriz7b(1 , :) matriz7b(2 , :)]'
 
-
 %{ 
 EJERCICIO 9:
 ------------
@@ -164,7 +156,6 @@ vectorua = [matrizA(3 , :) matrizA(: , 5)' matrizA(: , 6)' matrizA(: , 7)']
 
 %E9 alternativa b
 vectorub = [matrizA(3 , :) reshape(matrizA(: , 5:7),1,12)]
-
 
 %{ 
 EJERCICIO 10:

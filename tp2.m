@@ -172,7 +172,6 @@ subplot(3,3,8);
 imshow(verde_anulado);
 title('Canal Verde anulado');
 
-
 %{
 EJERCICIO 5:
 ------------
@@ -199,9 +198,6 @@ cuadrante1=img5_gris(1:X/2,1:Y/2); subplot(4,2,5); imshow(cuadrante1); title("Pr
 cuadrante2=img5_gris(1:X/2,Y/2:Y); subplot(4,2,6); imshow(cuadrante2); title("Segundo cuadrante") % muestro segundo cuadrante
 cuadrante3=img5_gris(X/2:X,1:Y/2); subplot(4,2,7); imshow(cuadrante3); title("Tercer cuadrante") % muestro tercer cuadrante
 cuadrante4=img5_gris(X/2:X,Y/2:Y); subplot(4,2,8); imshow(cuadrante4); title("Cuarto cuadrante") % muestro cuarto cuadrante
-
-
-
 
 %{
 EJERCICIO 6:

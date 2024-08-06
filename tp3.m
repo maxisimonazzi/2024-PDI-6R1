@@ -13,7 +13,6 @@ de gris y su respectivo Histograma normal.
 %}
 
 img1a = imread("manzanas.jpg");
-
 figure(1)
 subplot(2,2,1)
 imshow(img1a)
@@ -29,7 +28,6 @@ title("Histograma original")
 subplot(2,2,4)
 imhist(img_gris)
 title("Histograma escala de grises")
-
 
 %{ 
 EJERCICIO 2:
@@ -47,12 +45,10 @@ img2_gris = rgb2gray(img2);
 [cuentas, bins] = imhist(img2_gris);
 cuentas_acumuladas = cumsum(cuentas);
 
-
 subplot(2,2,1); imshow(img2);title("Imagen original")
 subplot(2,2,2); imshow(img2_gris);title("Escala de grises")
 subplot(2,2,3); imhist(img2_gris);title("Histograma")
 subplot(2,2,4); plot(bins, cuentas_acumuladas);title("Acumulativo")
-
 
 %{ 
 EJERCICIO 3:
@@ -67,13 +63,13 @@ figure(3)
 rojo=img3(:,:,1);
 verde=img3(:,:,2);
 azul=img3(:,:,3);
+
 subplot(2,3,1);imshow(rojo);title("Campo rojo")
 subplot(2,3,2);imshow(verde);title("Campo verde")
 subplot(2,3,3);imshow(azul);title("Campo azul")
 subplot(2,3,4);imhist(rojo);title("Hisotgrama rojo")
 subplot(2,3,5);imhist(verde);title("Hisotgrama verde")
 subplot(2,3,6);imhist(azul);title("Hisotgrama azul")
-
 
 %{ 
 EJERCICIO 4:
@@ -88,10 +84,10 @@ img4 = imread("manzanas.jpg");
 figure(4)
 img4_gris = rgb2gray(img4);
 gris_transpuesta=img4_gris';
+
 subplot(1,3,1); imshow(img4);title("Imagen Original")
 subplot(1,3,2); imshow(img4_gris);title("Imagen en escala de gris")
 subplot(1,3,3); imshow(gris_transpuesta);title("Transpuesta")
-
 
 %{ 
 EJERCICIO 5:
@@ -102,7 +98,6 @@ RGB, en escala de intensidad y su transpuesta . Si no dispone de cámara
 usar una fotografía.
 
 %}
-
 
 %{ 
 EJERCICIO 6:
@@ -152,7 +147,6 @@ fx_6 = Cap6Uno(x)
 x = [1, 3, 5, 7, 9, 11];
 fx = Cap6Uno(x)
 
-
 %{ 
 EJERCICIO 8:
 ------------
@@ -164,7 +158,6 @@ Escribir una función (llamada FaC) que convierta grados F a grados C . La fórm
 F = 53; % ejemplo, 53 grados Fahrenheit
 C = FaC(F)
 
-
 %{ 
 EJERCICIO 9:
 ------------
@@ -174,7 +167,6 @@ Escribir una función que grafique la seno y coseno en el intervalo que se espec
 %}
 
 graficar_seno_coseno(0, 2*pi);
-
 
 %{ 
 EJERCICIO 10:
@@ -200,7 +192,6 @@ cuentas_acumuladas = cumsum(cuentas);
 plot(bins, cuentas_acumuladas)
 title("Histograma acumulativo")
 
-
 %{ 
 EJERCICIO 11:
 ------------
@@ -220,7 +211,6 @@ subplot(1,2,2)
 hist_acumulativo(img11)
 title("Histograma acumulativo")
 
-
 %{ 
 EJERCICIO 12:
 ------------
@@ -233,4 +223,3 @@ c) Visualizar la transpuesta (transpose).
 d) Visualizar la transpuesta usando el Bloque de funciones.
 
 %}
-
