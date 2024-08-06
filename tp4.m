@@ -75,7 +75,7 @@ EJERCICIO 3:
 ------------
 
 Encontrar el complemento de una imagen en escala de gris .Visualizar imagen
-en escala de intensiad ,su complemento y sus respectivos histogramas.
+en escala de intensiad, su complemento y sus respectivos histogramas.
 
 %}
 
@@ -93,7 +93,7 @@ subplot(2,2,4); imhist(complemento); title("Histograma de complemento");
 EJERCICIO 4:
 ------------
 
-Binarizar una imagen usando los dos métodos y vistos
+Binarizar una imagen usando los dos métodos y vistos.
 
 %}
 
@@ -111,7 +111,7 @@ subplot(2,2,4); imhist(binaria); title("Histograma binario");
 EJERCICIO 5:
 ------------
 
-Modifique el contraste aplicando la sentencia J=imadjust(I),muestre la
+Modifique el contraste aplicando la sentencia J=imadjust(I), muestre la
 imagen fuente y la modificada y sus respectivos histogramas.
 
 %}
@@ -158,8 +158,13 @@ subplot(2,2,4);plot(bin_eq, cuentas_acumulada_eq); title("Histograma Ecualizado"
 EJERCICIO 7:
 ------------
 
-Encontrar el complemento de una imagen en escala de gris .Visualizar imagen
-en escala de intensiad ,su complemento y sus respectivos histogramas.
+a) Realizar la suma entre dos imágenes a y b, color y en escala de
+intensidad, mostrar cada imagen y la suma resultante.
+b) Realizar la resta entre las imágenes del apartado anterior en color y
+escala de grises, mostrar la resta.
+c) Realizar la operación AND y OR entre dos imágenes binarizadas
+previamente con la función im2bw. Realizar la operación lógica NOT a una
+imagen.
 
 %}
 
