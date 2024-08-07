@@ -198,8 +198,6 @@ subplot(2, 3, [3 6]);
 imshow(img_gris_trans);
 title('Imagen Transpuesta');
 
-
-
 % Realizado con funciones
 % -----------------------
 
@@ -226,7 +224,6 @@ histograma_acumulativo(grises,'Histograma acumulativo','Intensidad','Frecuencia 
 subplot(2, 3, [3 6]);
 mostrar_transpuesta(grises,'Imagen Transpuesta')
 
-
 %{
 EJERCICIO 5:
 ------------
@@ -235,9 +232,3 @@ Implementar los bloques de simulink para visualizar con la cámara la imagen
 en Color, en escala de grises y su transpuesta. De no disponer de una
 cámara usar una imagen.
 %}
-
-
-
-
-
-
